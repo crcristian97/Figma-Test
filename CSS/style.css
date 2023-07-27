@@ -1,0 +1,732 @@
+/* Global styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&family=Poppins:wght@300;400;500;600&family=Raleway:wght@100&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif; /* Example: Applying Poppins font to the whole body */
+}
+
+/* Remove bullet points from the li elements */
+li {
+  list-style: none;
+}
+
+/* Link styles */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* Navbar styles */
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: center; /* Center the items horizontally within the navbar */
+  align-items: center;
+  width: 100%; /* Ensure the navbar spans the full width of its parent container */
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 50px; /* Adjust this value to reduce or increase spacing between menu items */
+  flex-grow: 1; /* This will allow the menu items to fill the available space */
+}
+
+.nav-branding {
+  font-size: 2rem;
+  flex-grow: 1; /* This will push the branding to the left and let the menu items fill the space */
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: yellow; /* Change this color to the desired yellow color */
+}
+
+/* Section Welcome */
+
+.welcome {
+  height: 600px; /* Adjust the height as needed */
+  background: linear-gradient(to right, white 50%, #ffcc00 50%);
+  border-radius:  0 10%;  
+}
+
+
+/* Text styles */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pink-text {
+  color: pink;
+}
+
+.small-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.cta-button {
+  background-color: pink;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+/* Counter styles */
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  right: 20%; /* Adjust the right value to move it more to the left */
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.countdown {
+  background-color: rgba(247, 247, 247, 0.8); /* Light gray with alpha value 0.8 */
+  text-align: center;
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 35px;
+  padding: 20px;
+}
+
+.counterNumber {
+  font-size: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item span {
+ 
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+.label {
+  font-size: 12px;
+  color: #555;
+  margin-right: 25px;
+  color: rgb(9, 164, 236);
+}
+
+
+
+.counter p {
+  margin: 0;
+}
+
+/* Additional styles for spacing and alignment */
+.container {
+  display: flex;
+  width: 100%;
+  margin: 50px;
+}
+
+
+
+.content,
+.countdown {
+  flex: 1; /* Ocupa la mitad del ancho del contenedor */
+  padding: 20px;
+}
+
+
+/* 2do Section */
+
+.section {
+  background-color: #ff80df; /* Pink background color */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+}
+
+.modal-Section {
+  background-color: #fff;
+  width: calc(25% - 20px); /* Adjust the width for desired separation */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add margin at the bottom for separation */
+}
+
+.modal i {
+  font-size: 20px;
+  color: #ff80df; /* Pink icon color */
+}
+
+.number {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.text {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.section-button {
+  background-color: #ffed4a; /* Yellow background for the button */
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto; /* Center the button horizontally */
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.modal-1 .blue-icon{
+  color: #0099ff;
+}
+
+.modal-2 .yellow-icon{
+  color: #cadd1b;
+}
+
+.modal-3 .pink-color{
+  color: #ff80df;
+}
+
+.modal-4 .green-color{
+  color: #046811;
+}
+
+/* Styles for the two-container section */
+/* Styles for the entire section */
+.section-three {
+  background-color: #0099ff; /* Blue background color */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top of the container */
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Styles for the left container */
+.left-container {
+  flex: 1;
+  max-width: 400px; /* Set a maximum width for the left container */
+  color: #fff; /* White text color */
+  margin-left: 20%;
+  margin-top: 50px;
+}
+
+.left-container .content-block {
+  margin-bottom: 30px; /* Add some space between each content block */
+}
+
+.left-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.left-container p {
+  font-size: 16px;
+}
+
+
+
+/* Styles for the right container */
+.right-container {
+  flex: 1;
+  max-width: 400px; /* Set a maximum width for the right container */
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+.right-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Styles for the help section */
+.help-section {
+  background-color: #fff; /* White background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+/* Styles for the container */
+.help-container {
+  max-width: 650px; /* Set a smaller maximum width for the container */
+  text-align: center;
+  padding: 20px; /* Reduce the padding around the container */
+}
+
+.help-container h2 {
+  font-size: 24px; /* Optionally, you can reduce the font size of the heading */
+  margin-bottom: 10px;
+}
+
+.paragraphs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraphs-container p {
+  font-size: 14px; /* Optionally, you can reduce the font size of the paragraphs */
+  margin-bottom: 20px;
+}
+
+.paragraphs-container-help{
+  display: none !important;
+}
+
+.cta-button-patients{
+  display: none !important;
+}
+
+.cta-button-section{
+  background-color: pink;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+/* Styles for the image container */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/* Styles for the desktop image */
+.help-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Styles for the mobile image */
+.responsive-help-image {
+  display: none; /* Hide the mobile image by default */
+}
+
+
+/* Styles for the consultation section */
+.consultation-section {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative; /* To position the line */
+}
+
+/* Styles for the modal container */
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+/* Styles for the modal */
+.modal {
+  width: 300px;
+  height: 350px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  text-align: left; /* Align the content to the left */
+}
+
+.modal-title-blue {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #0099ff;
+  text-align: center;
+}
+
+.modal-title-pink {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ff80df;
+  text-align: center; /* Center the title */
+}
+
+.modal-content {
+  font-size: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.modal-content li {
+  margin-bottom: 12px;
+  position: relative; /* To position the point */
+  padding-left: 15px; /* Add space for the point */
+  margin-top: 12px; /* Add some space above the line */
+
+}
+
+.modal-content li::before {
+  content: "\2022"; /* Bullet point character (·) */
+  position: absolute;
+  left: 0;
+  top: 70%;
+  transform: translateY(-50%); /* Adjust the point's position to center it */
+}
+
+
+.line-blue {
+  border: none;
+  border-top: 2px solid #0099ff; /* Set the color and width of the blue line */
+  margin-top: 12px; /* Add some space above the line */
+}
+
+.line-pink {
+  border: none;
+  border-top: 2px solid #ff80df; /* Set the color and width of the pink line */
+  margin-top: 10px; /* Add some space above the line */
+}
+
+
+/* Styles for the FAQ section */
+.faq-section {
+  background-color: #fff; /* White background */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column; /* Buttons will be stacked vertically */
+  align-items: center; /* Center the buttons horizontally */
+}
+
+/* Styles for the FAQ buttons */
+.faq-button {
+  position: relative;
+  padding: 20px 40px; /* Increased padding for more space */
+  border: none;
+  border-radius: 20px;
+  background-color: #999494; /* Gray background */
+  color: #000; /* Text color */
+  font-size: 16px;
+  width: 100%; /* Set a width for the buttons to occupy more space */
+  max-width: 800px; /* Maximum width for the buttons */
+  margin: 10px;
+  overflow: hidden; /* Hide any content that overflows the button */
+  text-align: left; /* Texto dentro del botón alineado a la izquierda */
+}
+
+/* Styles for the arrow icon */
+.faq-button::after {
+  content: "\f107"; /* Unicode character for arrow-down () */
+  font-family: FontAwesome; /* Font Awesome library */
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #ff80df; /* Pink arrow color */
+}
+
+.faq-content {
+  
+  position: relative;
+  padding: 20px 40px; /* Increased padding for more space */
+  border: none;
+  border-radius: 20px;
+  background-color: #999494; /* Gray background */
+  color: #000; /* Text color */
+  font-size: 16px;
+  width: 100%; /* Set a width for the buttons to occupy more space */
+  max-width: 800px; /* Maximum width for the buttons */
+  margin: 10px;
+  overflow: hidden; /* Hide any content that overflows the button */
+  text-align: left; 
+}
+
+
+.faq-content {
+  display: none; 
+  padding: 10px;
+  background-color: #f5f5f5; 
+}
+
+
+.faq-button i {
+  margin-left: 10px;
+}
+
+
+.faq-button:hover i {
+  transform: rotate(90deg);
+}
+
+
+/* Footer Style */
+
+.footer {
+  background-color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+  max-width: 400px;
+}
+
+.column i {
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 60px;
+  color: #ff80df; 
+}
+
+
+
+.column p, .column label {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.column h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.black-text {
+  color: #000; /* Black color for the text */
+}
+
+.img-logo {
+  width: 100px; /* Adjust the width as per your preference */
+  height: auto; /* Keep the aspect ratio */
+}
+
+
+.column label {
+  font-size: 10px;
+  display: block;
+  margin: 10px 0;
+  /* Set a specific height for each label */
+  height: 20px;
+}
+
+.column li {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul {
+  margin-bottom: 5px;
+  color: #000; /* Black color for the links */
+  cursor: pointer;
+  list-style: none
+}
+
+.column ul:hover {
+  text-decoration: underline;
+}
+
+.footer-Copy{
+  margin-top: 100px !important;
+}
+
+/* Media query styles for smaller screens */
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* ... (hamburger animation styles) ... */
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  /* Additional styles for screens up to 768px */
+  .overlay {
+    justify-content: center; /* Revert to center position */
+    top: -15%; /* Adjust this value to change the vertical position of the overlay */
+    left: 52%; /* Adjust this value to change the horizontal position of the overlay */
+    width: 45%; /* Adjust this value to change the width of the overlay */
+    height: 80%; /* Adjust this value to change the height of the overlay */
+  }  
+
+
+  /* 2do section */
+  .section {
+    padding: 10px;
+  }
+  .modal {
+    width: calc(50% - 20px);
+  }
+  .section-button {
+    margin: 20px auto 40px; /* Adjust the margin for better spacing */
+  } 
+
+ /* 3er section*/
+ .section-three {
+  flex-direction: column; /* Stack elements vertically and reverse their order on small screens */
+  align-items: center; /* Center items horizontally on small screens */
+  }
+
+  .right-container {
+    margin-top: 60px; /* Add some space between the button and image */
+  }
+  /* Section Help section */
+  .help-container {
+    max-width: 100%; /* Allow the container to take the full width on small screens */
+  }
+
+  .paragraphs-container {
+    text-align: center; /* Center paragraphs on small screens */
+  }
+
+  .cta-button {
+    font-size: 16px; /* Optionally, you can adjust the font size of the button on small screens */
+  }
+
+  .cta-button-section{
+    display: none!important;
+  }
+
+  .cta-button-patients{ 
+      background-color: pink;
+      margin-left: 40%;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block !important;
+      margin-top: 160%;
+  }
+
+  .responsive-help-image {
+    display: block; /* Show the responsive image on small screens */
+    margin-top: -120%;
+  }
+
+  .help-image {
+    display: none; /* Hide the desktop image on small screens */
+  }
+
+  .paragraphs-container-help{
+    display: block !important;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: -150%;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .column {
+    max-width: 100%;
+  }
+
+  .column label:nth-child(2) {
+    position: static;
+    top: initial;
+  }
+}
